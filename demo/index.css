@@ -1,0 +1,23 @@
+div::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background: #fff000;
+}
+/*定义滚动条轨道*/
+div::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+    border-radius: 10px;
+    background: #fff;
+}
+/*定义滑块*/
+div::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 0px rgba(118, 118, 118, 0.5);
+    background-color: #6a5f54;
+}
+div{
+    overflow: hidden!important;
+}

@@ -85,7 +85,7 @@ const renderFrameDom = async (source, options) => {
   // await getLinkStart();
   // replace souce link from codepen.io
   let styleCode =
-    `html,body{width:100%;background:#fff;overflow:auto;margin:0px;height:100%;z-index:0;font-size:12px}\n` +
+    `body::-webkit-scrollbar {width: 6px;height: 6px;background: #fff000}body::-webkit-scrollbar-track {box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);border-radius: 10px;background: #fff;}body::-webkit-scrollbar-thumb {border-radius: 10px;box-shadow: inset 0 0 0px rgba(118, 118, 118, 0.5);background-color: #6a5f54;}html,body{width:100%;background:#fff;overflow-x:hidden;overflow-y:auto;margin:0px;height:100%;z-index:0;font-size:12px}\n` +
     css.replaceAll(
       /https:\/\/assets.codepen.io\/\d{1,12}\//g,
       `${resourceLink}/`
